@@ -11,7 +11,12 @@ const Title = () => {
         </Link>
       </SHeading>
       <Text>
-        By <Link href="https://unsplash.com/">Unsplash</Link>
+        By <Link href="https://unsplash.com/">Usplash</Link>
+        <br />
+        <Text as="span" fontSize=".8em">
+          Unsplash
+          APIのデモ版を使用しています。1時間毎にアクセス制限があります。
+        </Text>
       </Text>
     </Box>
   );

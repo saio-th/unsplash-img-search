@@ -21,6 +21,7 @@ const Results = memo((props) => {
       w="100%"
       mt="2em"
       mx="auto"
+      px="1em"
       sx={{
         columnCount: { base: '2', md: '4' },
         columnGap: '2',

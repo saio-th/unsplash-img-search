@@ -159,5 +159,5 @@ function App() {
 export default App;
 
 const SApp = styled.div`
-  padding: 2em 1em;
+  padding: 2em 0;
 `;

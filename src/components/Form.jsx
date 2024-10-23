@@ -3,15 +3,24 @@
 import { memo } from 'react';
 
 //スタイル
-import { Button, Container, Input } from '@chakra-ui/react';
-import styled from '@emotion/styled';
+import { Button, Container, Flex, Input } from '@chakra-ui/react';
 
 const Form = memo((props) => {
   const { keyword, setKeyword, searchPhoto, loading } = props;
 
   return (
-    <Container as="form" className="form">
-      <SFlex>
+    <Container
+      as="form"
+      className="form"
+      position="sticky"
+      top="0"
+      zIndex="1"
+      p="1em"
+      bg="rgba(255, 255, 255, .8)"
+      w="100%"
+      maxW="initial"
+    >
+      <Flex justifyContent="center">
         <Input
           type="text"
           name="keyword"
@@ -31,15 +40,9 @@ const Form = memo((props) => {
         >
           Search
         </Button>
-      </SFlex>
+      </Flex>
     </Container>
   );
 });
 
 export default Form;
-
-const SFlex = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-`;
