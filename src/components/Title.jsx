@@ -6,7 +6,7 @@ const Title = () => {
   return (
     <Box as="header">
       <SHeading as="h1">
-        <Link href="/" _hover={{ textDecoration: 'none' }}>
+        <Link href="/unsplash-img-search/" _hover={{ textDecoration: 'none' }}>
           Unsplash Image Serach
         </Link>
       </SHeading>
